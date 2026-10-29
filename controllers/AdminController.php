@@ -4,7 +4,7 @@
 // =============================================================================
 
 class AdminController extends Controller {
-
+    
     public function dashboard() {
         $user = $this->requireRole('admin');
         $games = GameModel::all('ngay_tao DESC LIMIT 20');
