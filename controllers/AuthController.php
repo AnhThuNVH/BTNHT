@@ -4,7 +4,7 @@
 // =============================================================================
 
 class AuthController extends Controller {
-
+    
     public function showLogin() {
         $this->render('auth/login');
     }
